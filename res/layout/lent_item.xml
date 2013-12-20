@@ -15,7 +15,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Search..." >
+            android:hint="Lent Item" >
+
+            <requestFocus>
+            </requestFocus>
+        </EditText>
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/lent_item_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Quantity" >
 
             <requestFocus>
             </requestFocus>
@@ -50,6 +67,24 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Lent Date"
+            android:inputType="date" >
+
+            <requestFocus>
+            </requestFocus>
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/due_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Due Date"
             android:inputType="date" >
 
             <requestFocus>

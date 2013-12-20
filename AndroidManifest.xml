@@ -19,6 +19,8 @@
         <activity android:name=".LentItemActivity"
                   android:label="@string/app_name">
         </activity>
-
+        <activity android:name=".DatePickerActivity"
+                  android:label="@string/app_name">
+        </activity>
     </application>
 </manifest>

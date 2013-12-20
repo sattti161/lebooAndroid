@@ -14,7 +14,8 @@ public class HelloTabActivity extends TabActivity {
         
         Resources res = getResources();
         Intent i = new Intent(this,Simple.class);
-        Intent lentItemActivity = new Intent(this,LentItemActivity.class);
+        Intent datePickerActivity = new Intent(this, DatePickerActivity.class);
+        Intent lentItemActivity = new Intent(this, LentItemActivity.class);
         TabHost mTabHst = getTabHost();
         
         mTabHst.addTab(mTabHst.newTabSpec("tab_test1").setIndicator("One",res.getDrawable(
@@ -22,7 +23,7 @@ public class HelloTabActivity extends TabActivity {
         mTabHst.addTab(mTabHst.newTabSpec("tab_test2").setIndicator("Two",res.getDrawable(
         		R.drawable.two)).setContent(lentItemActivity));
         mTabHst.addTab(mTabHst.newTabSpec("tab_test3").setIndicator("Three",res.getDrawable(
-        		R.drawable.three)).setContent(i));
+        		R.drawable.three)).setContent(datePickerActivity));
         
         mTabHst.setCurrentTab(0);
         

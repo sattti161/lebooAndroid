@@ -11,11 +11,11 @@
         android:gravity="center" >
 
         <EditText
-            android:id="@+id/lent_item"
+            android:id="@+id/borrowed_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Lent Item" >
+            android:hint="I Borrowed" >
 
             <requestFocus>
             </requestFocus>
@@ -28,7 +28,7 @@
         android:gravity="center" >
 
         <EditText
-            android:id="@+id/lent_item_quantity"
+            android:id="@+id/borrowed_item_quantity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -45,11 +45,11 @@
         android:gravity="center" >
 
         <EditText
-            android:id="@+id/lent_to_person"
+            android:id="@+id/borrowed_from_person"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Lent To" >
+            android:hint="Borrowed From" >
 
             <requestFocus>
             </requestFocus>
@@ -62,11 +62,11 @@
         android:gravity="center" >
 
         <EditText
-            android:id="@+id/lent_date"
+            android:id="@+id/borrowed_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Lent Date"
+            android:hint="Borrowed Date"
             android:inputType="date" >
 
             <requestFocus>
@@ -80,7 +80,7 @@
         android:gravity="center" >
 
         <EditText
-            android:id="@+id/due_date"
+            android:id="@+id/due_date_borrowed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -98,7 +98,7 @@
         android:gravity="center" >
 
         <Button
-            android:id="@+id/updateLentItemButton"
+            android:id="@+id/updateBorrowedItemButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"

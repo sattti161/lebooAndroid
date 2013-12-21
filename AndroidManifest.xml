@@ -6,20 +6,24 @@
     <uses-sdk android:minSdkVersion="4" />
 
     <application android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:name=".HelloTabActivity"
+        <activity android:name="com.satish.leboo.HelloTabActivity"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Simple"
+        <activity android:name="com.satish.leboo.Simple"
                   android:label="@string/app_name">
         </activity>
-        <activity android:name=".LentItemActivity"
+        <activity android:name="com.satish.leboo.LentItemActivity"
                   android:label="@string/app_name">
         </activity>
-        <activity android:name=".DatePickerActivity"
+       
+        <activity android:name="com.satish.leboo.DatePickerActivity"
+                  android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.satish.leboo.BorrowedItemActivity"
                   android:label="@string/app_name">
         </activity>
     </application>

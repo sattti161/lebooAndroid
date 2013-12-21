@@ -34,10 +34,11 @@ public class Transaction extends BaseDaoEnabled<Transaction, String> {
 	@DatabaseField(columnName = "status")
 	public boolean status;
 
-	public Transaction(int userId, String item, int quantity, boolean flag, String initDate,
+	public Transaction(int userId, String item, int quantity, String person, boolean flag, String initDate,
 			String dueDate, boolean status) {
 		this.userId = userId;
 		this.item = item;
+		this.person = person;
 		this.quantity = quantity;
 		this.lentBorrowedFlag = flag;
 		this.dateInit = initDate;

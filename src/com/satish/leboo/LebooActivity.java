@@ -13,7 +13,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.TabHost;
 
-public class HelloTabActivity extends TabActivity {
+public class LebooActivity extends TabActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

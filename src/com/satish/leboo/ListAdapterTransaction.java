@@ -44,10 +44,10 @@ public class ListAdapterTransaction extends BaseAdapter {
 		else 
 			convertView.setBackgroundColor(Color.parseColor("#4CC417"));
 		
-		holder.item.setText("Item : " + HelloTabActivity.transactions.get(position).item);
-		holder.person.setText("Lent To : " + HelloTabActivity.transactions.get(position).person);
-		holder.dateInit.setText("Lent On : " + HelloTabActivity.transactions.get(position).dateInit);
-		holder.dateDue.setText("  Due Date : " + HelloTabActivity.transactions.get(position).dateDue);
+		holder.item.setText("Item : " + LebooActivity.transactions.get(position).item);
+		holder.person.setText("Lent To : " + LebooActivity.transactions.get(position).person);
+		holder.dateInit.setText("Lent On : " + LebooActivity.transactions.get(position).dateInit);
+		holder.dateDue.setText("  Due Date : " + LebooActivity.transactions.get(position).dateDue);
 		
 		return convertView;
 	}
@@ -63,12 +63,12 @@ public class ListAdapterTransaction extends BaseAdapter {
 
 	@Override
 	public int getCount() {
-		return HelloTabActivity.transactions.size();
+		return LebooActivity.transactions.size();
 	}
 
 	@Override
 	public Object getItem(int position) {
-		return HelloTabActivity.transactions.get(position);
+		return LebooActivity.transactions.get(position);
 		// TODO Auto-generated method stub
 		/**Iterator it = DataHolder.BRAND_IMAGE_MAP.entrySet().iterator(); 
 		for (int i = 0; i < position - 1; i++) it.next();

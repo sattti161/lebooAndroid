@@ -45,7 +45,7 @@ public class LebooActivity extends TabActivity {
     public static List <Transaction> transactions;
     private void setUpDb() {
     	DatabaseManager.init(this);
-    	//createNewWishList();
+    	createNewWishList();
     	transactions = DatabaseManager.getInstance().getAllWishLists();
     	//final List <Transaction> wishLists = DatabaseManager.getInstance().getAllWishLists();
     }

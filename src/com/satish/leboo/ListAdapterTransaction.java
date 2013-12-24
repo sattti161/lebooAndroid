@@ -36,14 +36,17 @@ public class ListAdapterTransaction extends BaseAdapter {
 		} 
 		else
 			holder = (ViewHolder) convertView.getTag();
-		
+		//convertView.setBackgroundColor(Color.parseColor("#FFFFFF"));
 		if (position % 3 == 0)
 			convertView.setBackgroundColor(Color.parseColor("#FBBBB9"));
 		else if (position % 3 == 1)
 			convertView.setBackgroundColor(Color.parseColor("#82CAFF"));
 		else 
 			convertView.setBackgroundColor(Color.parseColor("#4CC417"));
-		
+		if (position % 2 == 0)
+			convertView.setBackgroundColor(Color.parseColor("#ADD8E6"));
+		else
+			convertView.setBackgroundColor(Color.parseColor("#FBBBB9"));
 		holder.item.setText("Item : " + LebooActivity.transactions.get(position).item);
 		holder.person.setText("Lent To : " + LebooActivity.transactions.get(position).person);
 		holder.dateInit.setText("Lent On : " + LebooActivity.transactions.get(position).dateInit);

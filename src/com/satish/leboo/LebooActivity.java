@@ -29,11 +29,11 @@ public class LebooActivity extends TabActivity {
         TabHost mTabHst = getTabHost();
         
         mTabHst.addTab(mTabHst.newTabSpec("tab_test1").setIndicator("Home",res.getDrawable(
-        		R.drawable.one)).setContent(i));
+        		R.drawable.transfer_down_up)).setContent(i));
         mTabHst.addTab(mTabHst.newTabSpec("tab_test2").setIndicator("I Lent",res.getDrawable(
-        		R.drawable.two)).setContent(lentItemActivity));
+        		R.drawable.arrow_up)).setContent(lentItemActivity));
         mTabHst.addTab(mTabHst.newTabSpec("tab_test3").setIndicator("I Borrowed",res.getDrawable(
-        		R.drawable.three)).setContent(borrowedItemActivity));
+        		R.drawable.arrow_down)).setContent(borrowedItemActivity));
         mTabHst.addTab(mTabHst.newTabSpec("tab_test4").setIndicator("Gen",res.getDrawable(
         		R.drawable.three)).setContent(datePickerActivity));
         

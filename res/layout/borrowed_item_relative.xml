@@ -6,17 +6,17 @@
     android:paddingLeft="3dp" >
 
     <LinearLayout
-        android:id="@+id/lent_item_layout"
+        android:id="@+id/borrowed_item_layout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center" >
 
         <EditText
-            android:id="@+id/lent_item"
+            android:id="@+id/borrowed_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Lent Item" >
+            android:hint="I Borrowed" >
 
             <requestFocus>
             </requestFocus>
@@ -26,25 +26,25 @@
             android:id="@+id/lent_item_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/lent_item"
+            android:layout_toRightOf="@id/borrowed_item"
             android:paddingLeft="3dp"
             android:paddingRight="5dp"
-            android:src="@drawable/arrow_up" />
+            android:src="@drawable/arrow_down" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/lent_to_person_layout"
+        android:id="@+id/borrowed_from_person_layout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/lent_item_layout"
+        android:layout_below="@id/borrowed_item_layout"
         android:gravity="center" >
 
         <EditText
-            android:id="@+id/lent_to_person"
+            android:id="@+id/borrowed_from_person"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Lent To" >
+            android:hint="Borrowed From" >
 
             <requestFocus>
             </requestFocus>
@@ -54,21 +54,21 @@
             android:id="@+id/lent_to_person_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/lent_to_person"
+            android:layout_toRightOf="@id/borrowed_from_person"
             android:paddingLeft="3dp"
             android:paddingRight="5dp"
             android:src="@drawable/personal" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/lent_date_layout"
+        android:id="@+id/borrowed_date_layout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/lent_to_person_layout"
+        android:layout_below="@id/borrowed_from_person_layout"
         android:gravity="center" >
 
         <EditText
-            android:id="@+id/lent_date"
+            android:id="@+id/borrowed_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -83,21 +83,21 @@
             android:id="@+id/lent_date_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/lent_date"
+            android:layout_toRightOf="@id/borrowed_date"
             android:paddingLeft="3dp"
             android:paddingRight="5dp"
             android:src="@drawable/calendar" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/due_date_layout"
+        android:id="@+id/due_date_borrowed_layout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/lent_date_layout"
+        android:layout_below="@id/borrowed_date_layout"
         android:gravity="center" >
 
         <EditText
-            android:id="@+id/due_date"
+            android:id="@+id/due_date_borrowed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -112,24 +112,24 @@
             android:id="@+id/due_date_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/due_date"
+            android:layout_toRightOf="@id/due_date_borrowed"
             android:paddingLeft="3dp"
             android:paddingRight="5dp"
             android:src="@drawable/calendar" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/updateLentItemButton_layout"
+        android:id="@+id/updateBorrowedItemButton_layout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/due_date_layout"
+        android:layout_below="@id/due_date_borrowed_layout"
         android:gravity="center" >
 
         <Button
-            android:id="@+id/updateLentItemButton"
+            android:id="@+id/updateBorrowedItemButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/due_date_layout"
+            android:layout_below="@id/due_date_borrowed_layout"
             android:gravity="center"
             android:text="UPDATE"
             android:textSize="20sp"

@@ -2,7 +2,8 @@ package com.satish.leboo;
 
 
 
-import android.R;
+import hello.tab.tabhello.R;
+import android.app.Activity;
 import android.app.ListActivity;
 import android.os.Bundle;
 
@@ -11,7 +12,7 @@ public class Simple extends ListActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		//setContentView(R.layout.sea);
+		setContentView(R.layout.home_layout);
 		ListAdapterTransaction list = new ListAdapterTransaction(getApplicationContext());
 		setListAdapter(list);
 		//setListAdapter(new ListAdapterBrandImageName(getActivity()));

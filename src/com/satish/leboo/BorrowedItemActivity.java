@@ -29,7 +29,7 @@ public class BorrowedItemActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.borrowed_item);
+		setContentView(R.layout.borrowed_item_relative);
 		final Calendar c = Calendar.getInstance();
 		year = c.get(Calendar.YEAR);
 		month = c.get(Calendar.MONTH);

@@ -1,7 +1,5 @@
 package com.satish.leboo;
 
-import hello.tab.tabhello.R;
-
 import java.util.Calendar;
 
 import android.app.Activity;

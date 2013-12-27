@@ -2,8 +2,6 @@ package com.satish.leboo;
 
 
 
-import hello.tab.tabhello.R;
-import android.app.Activity;
 import android.app.ListActivity;
 import android.os.Bundle;
 

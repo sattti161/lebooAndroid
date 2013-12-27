@@ -1,17 +1,15 @@
 package com.satish.leboo;
 
-import hello.tab.tabhello.R;
-
 import java.util.List;
-
-import com.satish.leboo.db.DatabaseManager;
-import com.satish.leboo.db.Transaction;
 
 import android.app.TabActivity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.TabHost;
+
+import com.satish.leboo.db.DatabaseManager;
+import com.satish.leboo.db.Transaction;
 
 public class LebooActivity extends TabActivity {
     @Override

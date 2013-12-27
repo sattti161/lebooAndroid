@@ -1,6 +1,5 @@
 package com.satish.leboo;
 
-import hello.tab.tabhello.R;
 import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;

@@ -1,11 +1,6 @@
 package com.satish.leboo;
 
-import hello.tab.tabhello.R;
-
 import java.util.Calendar;
-
-import com.satish.leboo.db.DatabaseManager;
-import com.satish.leboo.db.Transaction;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
@@ -16,6 +11,9 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+
+import com.satish.leboo.db.DatabaseManager;
+import com.satish.leboo.db.Transaction;
 
 
 public class BorrowedItemActivity extends Activity {

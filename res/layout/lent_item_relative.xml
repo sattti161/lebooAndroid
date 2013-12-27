@@ -3,6 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#ADD8E6"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
     android:paddingLeft="3dp" >
 
     <LinearLayout
@@ -16,7 +18,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Lent Item" >
+            android:hint="Lent Item"
+            android:singleLine="true" >
 
             <requestFocus>
             </requestFocus>
@@ -44,7 +47,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Lent To" >
+            android:hint="Lent To"
+            android:singleLine="true" >
 
             <requestFocus>
             </requestFocus>
@@ -73,7 +77,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Lent Date"
-            android:inputType="date" >
+            android:inputType="date"
+            android:singleLine="true" >
 
             <requestFocus>
             </requestFocus>
@@ -102,7 +107,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Due Date"
-            android:inputType="date" >
+            android:inputType="date"
+            android:singleLine="true" >
 
             <requestFocus>
             </requestFocus>

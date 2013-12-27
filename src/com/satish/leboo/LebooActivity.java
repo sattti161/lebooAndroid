@@ -32,8 +32,8 @@ public class LebooActivity extends TabActivity {
         		R.drawable.arrow_up)).setContent(lentItemActivity));
         mTabHst.addTab(mTabHst.newTabSpec("tab_test3").setIndicator("I Borrowed",res.getDrawable(
         		R.drawable.arrow_down)).setContent(borrowedItemActivity));
-        mTabHst.addTab(mTabHst.newTabSpec("tab_test4").setIndicator("Gen",res.getDrawable(
-        		R.drawable.three)).setContent(datePickerActivity));
+        /*mTabHst.addTab(mTabHst.newTabSpec("tab_test4").setIndicator("Gen",res.getDrawable(
+        		R.drawable.three)).setContent(datePickerActivity));*/
         
         mTabHst.setCurrentTab(0);
         
@@ -43,7 +43,7 @@ public class LebooActivity extends TabActivity {
     public static List <Transaction> transactions;
     private void setUpDb() {
     	DatabaseManager.init(this);
-    	//createNewWishList();
+    	createNewWishList();
     	transactions = DatabaseManager.getInstance().getAllWishLists();
     	//final List <Transaction> wishLists = DatabaseManager.getInstance().getAllWishLists();
     }

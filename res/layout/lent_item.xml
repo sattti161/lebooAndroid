@@ -15,6 +15,7 @@
             android:id="@+id/lent_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:scrollHorizontally="true"
             android:layout_weight="1"
             android:hint="Lent Item" >
 

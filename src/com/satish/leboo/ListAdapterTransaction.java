@@ -29,8 +29,8 @@ public class ListAdapterTransaction extends BaseAdapter {
 			holder = new ViewHolder();
 			holder.item = (TextView) convertView.findViewById(R.id.item_name);
 			holder.person = (TextView) convertView.findViewById(R.id.person_name);
-			holder.dateInit = (TextView) convertView.findViewById(R.id.date_init);
-			holder.dateDue = (TextView) convertView.findViewById(R.id.date_due);
+			holder.dates = (TextView) convertView.findViewById(R.id.dates);
+			//holder.dateDue = (TextView) convertView.findViewById(R.id.date_due);
 
 			convertView.setTag(holder);
 		} 
@@ -49,8 +49,9 @@ public class ListAdapterTransaction extends BaseAdapter {
 			convertView.setBackgroundColor(Color.parseColor("#FBBBB9"));
 		holder.item.setText("Item : " + LebooActivity.transactions.get(position).item);
 		holder.person.setText("Lent To : " + LebooActivity.transactions.get(position).person);
-		holder.dateInit.setText("Lent On : " + LebooActivity.transactions.get(position).dateInit);
-		holder.dateDue.setText("  Due Date : " + LebooActivity.transactions.get(position).dateDue);
+		holder.dates.setText("Lent On : " + LebooActivity.transactions.get(position).dateInit +
+				"    Due Date : " + LebooActivity.transactions.get(position).dateDue);
+		//holder.dateDue.setText("  Due Date : " + LebooActivity.transactions.get(position).dateDue);
 		
 		return convertView;
 	}
@@ -58,8 +59,8 @@ public class ListAdapterTransaction extends BaseAdapter {
 	static class ViewHolder {
 		TextView item;
 		TextView person;
-		TextView dateInit;
-		TextView dateDue;
+		TextView dates;
+		//TextView dateDue;
 	}
 
 

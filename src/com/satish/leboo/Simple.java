@@ -12,15 +12,15 @@ import android.widget.Spinner;
 
 public class Simple extends ListActivity implements OnItemSelectedListener {
 
-	public static ListAdapterTransaction allTransactions;
+	public static ListAdapterTransaction listAdapter;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.home_layout);
 		initDragDownList();
-		allTransactions = new ListAdapterTransaction(getApplicationContext());
-		setListAdapter(allTransactions);
+		listAdapter = new ListAdapterTransaction(getApplicationContext());
+		setListAdapter(listAdapter);
 		//setListAdapter(new ListAdapterBrandImageName(getActivity()));
 	}
 	
@@ -44,16 +44,23 @@ public class Simple extends ListActivity implements OnItemSelectedListener {
 	public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
 		switch (position) {
 		case 0:
-			// What ever you want to happen when item selected
+			LebooActivity.setAllItems();
 			break;
 		case 1:
-			// What ever you want to happen when item selected
+			LebooActivity.setBorrowedItems();
 			break;
 		case 2:
-			// What ever you want to happen when item selected
+			LebooActivity.setLentItems();
 			break;
-
-		}   
+		case 3:
+			LebooActivity.setPendingItems();
+			break;
+		case 4:
+			LebooActivity.setReturnedItems();
+			break;
+		}
+		
+		listAdapter.notifyDataSetChanged();
 	}
 
 

@@ -47,4 +47,13 @@ public class DatabaseManager {
             e.printStackTrace();
         }
     }
+	
+	
+	public void updateEntry(Transaction l) {
+		try {
+            getHelper().getWishListDao().update(l);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+	}
 }

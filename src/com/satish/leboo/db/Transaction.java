@@ -7,8 +7,8 @@ import com.j256.ormlite.table.DatabaseTable;
 @DatabaseTable(tableName = "transactions")
 public class Transaction extends BaseDaoEnabled<Transaction, String> {
 	
-	/**@DatabaseField(id = true, columnName = "id")
-	public String id;**/
+	@DatabaseField(generatedId = true)
+	public int id;
 	
 	@DatabaseField(columnName = "user_id")
 	public int userId;

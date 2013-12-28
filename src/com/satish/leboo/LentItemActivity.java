@@ -101,6 +101,7 @@ public class LentItemActivity extends Activity {
 						((EditText)findViewById(R.id.due_date)).getText().toString().replace('/', '-'),
 						false);
 		        DatabaseManager.getInstance().addWishList(l);
+		        
 		        onCreate(null);
 			}
 

@@ -49,7 +49,7 @@ public class ListAdapterTransaction extends BaseAdapter {
 		holder.item.setText("Lent : " + LebooActivity.transactions.get(position).item);
 		holder.person.setText("To : " + LebooActivity.transactions.get(position).person);
 		holder.dates.setText("On : " + LebooActivity.transactions.get(position).dateInit +
-				"    Due : " + LebooActivity.transactions.get(position).dateDue);
+				"   Due : " + LebooActivity.transactions.get(position).dateDue);
 		//holder.dateDue.setText("  Due Date : " + LebooActivity.transactions.get(position).dateDue);
 		
 		return convertView;

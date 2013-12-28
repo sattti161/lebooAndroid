@@ -12,19 +12,21 @@ import android.widget.Spinner;
 
 public class Simple extends ListActivity implements OnItemSelectedListener {
 
+	public static ListAdapterTransaction allTransactions;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.home_layout);
 		initDragDownList();
-		ListAdapterTransaction list = new ListAdapterTransaction(getApplicationContext());
-		setListAdapter(list);
+		allTransactions = new ListAdapterTransaction(getApplicationContext());
+		setListAdapter(allTransactions);
 		//setListAdapter(new ListAdapterBrandImageName(getActivity()));
 	}
 	
 
 	Spinner spinner;
-	private static final String[] paths = { "All", "Borrowed", "Lent", "Pending", "Returned"};
+	private static final String[] paths = { "All Items", "Borrowed Items", "Lent Items", "Pending Items", "Returned Items"};
 
 	private void initDragDownList() {
 
